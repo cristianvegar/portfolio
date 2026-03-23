@@ -70,7 +70,7 @@ export default function Portfolio() {
       
       {/* HERO */}
       <section className="p-10 text-center">
-        <h1 className="text-4xl font-bold">Cristian Vega</h1>
+        <h1 className="text-4xl font-bold">Cristian Orlando Vega</h1>
         <p className="text-xl mt-4">
           Backend & Cloud Integration Engineer
         </p>
