@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cristian Vega — Backend & Cloud Integration Engineer",
-  description: "Portfolio site for Cristian Vega with cloud, API and integration engineering experience.",
+  title: "Cristian Vega — Ingeniero Backend y de Integración en la Nube",
+  description: "Portfolio de Cristian Vega: ingeniería backend, APIs seguras, integración en la nube y arquitectura de sistemas.",
 };
 
 export default function RootLayout({
