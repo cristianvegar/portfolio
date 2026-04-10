@@ -68,136 +68,125 @@ import React from "react";
 
 export default function Portfolio() {
   return (
-    <div className="bg-black text-white min-h-screen font-sans">
-      {/* HERO */}
-      <section className="p-10 text-center">
-        <h1 className="text-4xl font-bold">Cristian Vega</h1>
-        <p className="text-xl mt-4">
-          Backend & Cloud Integration Engineer
-        </p>
-        <p className="mt-2 text-gray-400 max-w-2xl mx-auto">
-          5+ years of experience designing scalable APIs, cloud integrations and distributed systems across AWS, Azure and GCP.
-        </p>
-        <p className="mt-2 text-gray-500">
-          C# | Python | .NET | APIGee | React Native | MongoDB
-        </p>
-      </section>
+    <main className="min-h-screen bg-black text-white font-sans">
+      <div className="relative overflow-hidden">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-96 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_55%)]" />
+        <div className="relative mx-auto max-w-6xl px-6 py-10">
+          <header className="flex flex-col gap-8 border-b border-white/10 pb-10 md:flex-row md:items-center md:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Hi, I'm Cristian Vega.</p>
+              <h1 className="mt-6 text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+                Backend & Cloud Integration Engineer.
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+                Building reliable API ecosystems, cloud-native integrations and distributed services for enterprise teams.
+              </p>
+              <p className="mt-6 text-sm uppercase tracking-[0.28em] text-slate-500">
+                C# · Python · .NET · APIGee · AWS · Azure · GCP
+              </p>
+            </div>
 
-      {/* ABOUT */}
-      <section className="p-10 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-        <p className="text-gray-300">
-          Integration Engineer with strong experience in backend development and API ecosystems. I specialize in designing,
-          implementing, and maintaining scalable integrations between enterprise systems and third-party services.
-        </p>
-        <p className="text-gray-300 mt-3">
-          Proven experience working with microservices architectures, cloud platforms, and real-time data processing. Strong
-          background in troubleshooting, performance optimization, and secure API design.
-        </p>
-      </section>
+            <nav className="flex flex-wrap gap-4 text-sm text-slate-400">
+              <a href="#about" className="transition hover:text-white">About</a>
+              <a href="#work" className="transition hover:text-white">Work</a>
+              <a href="#projects" className="transition hover:text-white">Projects</a>
+              <a href="#contact" className="transition hover:text-white">Contact</a>
+            </nav>
+          </header>
 
-      {/* EXPERIENCE */}
-      <section className="p-10 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-6">Professional Experience</h2>
+          <section className="mt-14 grid gap-8 lg:grid-cols-[1.6fr_1fr] lg:items-start">
+            <div className="space-y-10">
+              <section id="about" className="space-y-6">
+                <p className="text-sm uppercase tracking-[0.28em] text-slate-500">About</p>
+                <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_0_60px_rgba(255,255,255,0.02)]">
+                  <p className="text-slate-300 leading-8">
+                    I specialize in backend architecture, API design, and cloud integration for high-growth companies. My work focuses on secure, scalable services that connect distributed systems and improve developer velocity.
+                  </p>
+                  <p className="mt-4 text-slate-300 leading-8">
+                    I have over 5 years of experience delivering enterprise-grade solutions using .NET, Python, and API management platforms while driving observability, reliability and cost efficiency.
+                  </p>
+                </div>
+              </section>
 
-        <div className="mb-6">
-          <h3 className="font-bold">Integrations Engineer — Inchcape Digital</h3>
-          <p className="text-gray-400 text-sm">2025 - Present</p>
-          <ul className="text-gray-300 mt-2 list-disc list-inside">
-            <li>Designed and implemented API integrations using APIGee</li>
-            <li>Reduced system downtime through monitoring and troubleshooting</li>
-            <li>Implemented authentication, authorization and validation best practices</li>
-            <li>Built POC using Google Cloud Logging to reduce costs and improve persistence</li>
-          </ul>
+              <section id="work" className="space-y-6">
+                <p className="text-sm uppercase tracking-[0.28em] text-slate-500">Selected Work</p>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                    <p className="text-sm uppercase tracking-[0.22em] text-slate-500">System</p>
+                    <h2 className="mt-4 text-xl font-semibold text-white">Telemetry & Monitoring</h2>
+                    <p className="mt-3 text-slate-300 leading-7">
+                      Real-time vehicle analytics with a .NET backend, React Native client and MongoDB persistence.
+                    </p>
+                  </div>
+                  <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+                    <p className="text-sm uppercase tracking-[0.22em] text-slate-500">Platform</p>
+                    <h2 className="mt-4 text-xl font-semibold text-white">API Integration Layer</h2>
+                    <p className="mt-3 text-slate-300 leading-7">
+                      Secure, centralized gateway for internal and external services using APIGee and cloud functions.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section id="projects" className="space-y-6">
+                <p className="text-sm uppercase tracking-[0.28em] text-slate-500">Projects</p>
+                <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="text-xl font-semibold text-white">Cloud Migration Pipeline</h3>
+                      <p className="mt-2 text-slate-300 leading-7">
+                        Automated deployment and integration flow for cloud services that reduced configuration overhead and improved release cadence.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-white">Secure API Mesh</h3>
+                      <p className="mt-2 text-slate-300 leading-7">
+                        Designed an authentication-first API mesh for distributed microservices with monitoring and centralized observability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <aside className="rounded-3xl border border-white/10 bg-white/5 p-8">
+              <div className="space-y-8">
+                <div>
+                  <p className="text-sm uppercase tracking-[0.28em] text-slate-500">Focus</p>
+                  <ul className="mt-6 space-y-4 text-slate-300">
+                    <li>API design & integration</li>
+                    <li>Cloud-native engineering</li>
+                    <li>Distributed systems</li>
+                    <li>Observability & reliability</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="text-sm uppercase tracking-[0.28em] text-slate-500">Tools</p>
+                  <div className="mt-6 grid gap-2 text-slate-300">
+                    <span>C#, .NET, Python</span>
+                    <span>AWS, Azure, GCP</span>
+                    <span>APIGee, Kubernetes, Docker</span>
+                    <span>MongoDB, SQL, CI/CD</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <section id="contact" className="mt-16 rounded-3xl border border-white/10 bg-white/5 p-10">
+            <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <p className="text-sm uppercase tracking-[0.28em] text-slate-500">Contact</p>
+                <h2 className="mt-4 text-3xl font-semibold text-white">Let's build something reliable together.</h2>
+              </div>
+              <div className="space-y-2 text-slate-300">
+                <p>crisvegarodri@gmail.com</p>
+                <p>+57 320 477 7515</p>
+              </div>
+            </div>
+          </section>
         </div>
-
-        <div className="mb-6">
-          <h3 className="font-bold">Ssr .NET Engineer — Globant</h3>
-          <p className="text-gray-400 text-sm">2021 - 2025</p>
-          <ul className="text-gray-300 mt-2 list-disc list-inside">
-            <li>Developed microservices using ASP.NET Core</li>
-            <li>Worked with AWS Lambdas and Azure Functions</li>
-            <li>Implemented automated testing with Selenium and NUnit</li>
-            <li>Applied DDD principles in distributed systems</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* PROJECTS */}
-      <section className="p-10 max-w-5xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-6">Projects</h2>
-
-        <div className="mb-8 border border-gray-700 p-6 rounded-2xl">
-          <h3 className="text-xl font-bold">Vehicle Telemetry & Monitoring System</h3>
-          <p className="text-gray-400 mt-2">
-            Distributed system designed to monitor vehicle data in real-time.
-          </p>
-          <ul className="mt-3 text-sm text-gray-300 list-disc list-inside">
-            <li>React Native mobile application</li>
-            <li>.NET backend with minimal APIs</li>
-            <li>MongoDB distributed database</li>
-          </ul>
-          <p className="text-gray-500 mt-3 text-sm">
-            Focused on scalability, real-time processing and distributed data handling.
-          </p>
-        </div>
-
-        <div className="mb-8 border border-gray-700 p-6 rounded-2xl">
-          <h3 className="text-xl font-bold">API Integration Platform</h3>
-          <p className="text-gray-400 mt-2">
-            Centralized integration layer to connect internal systems with external services.
-          </p>
-          <ul className="mt-3 text-sm text-gray-300 list-disc list-inside">
-            <li>APIGee API Gateway</li>
-            <li>Cloud Functions (Python)</li>
-            <li>Secure API design</li>
-          </ul>
-          <p className="text-gray-500 mt-3 text-sm">
-            Designed for reliability, security and maintainability in enterprise environments.
-          </p>
-        </div>
-      </section>
-
-      {/* ENGINEERING APPROACH */}
-      <section className="p-10 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Engineering Approach</h2>
-        <ul className="text-gray-300 list-disc list-inside space-y-2">
-          <li>Designing scalable and maintainable APIs</li>
-          <li>Applying Domain-Driven Design (DDD) in distributed systems</li>
-          <li>Building cloud-native and event-driven architectures</li>
-          <li>Ensuring security, observability and performance in integrations</li>
-        </ul>
-      </section>
-
-      {/* SKILLS */}
-      <section className="p-10 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Technical Skills</h2>
-        <div className="grid grid-cols-2 gap-4 text-gray-300">
-          <div>
-            <h3 className="font-bold">Languages</h3>
-            <p>C#, Python, JavaScript, SQL</p>
-          </div>
-          <div>
-            <h3 className="font-bold">Cloud</h3>
-            <p>AWS, Azure, GCP</p>
-          </div>
-          <div>
-            <h3 className="font-bold">Backend</h3>
-            <p>.NET Core, ASP.NET, APIs</p>
-          </div>
-          <div>
-            <h3 className="font-bold">Integration</h3>
-            <p>APIGee, API Gateway, Microservices</p>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section className="p-10 text-center">
-        <h2 className="text-2xl font-semibold">Contact</h2>
-        <p className="mt-4 text-gray-400">crisvegarodri@gmail.com</p>
-        <p className="text-gray-400">+57 320 477 7515</p>
-      </section>
-    </div>
+      </div>
+    </main>
   );
 }
